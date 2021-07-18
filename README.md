@@ -6,45 +6,59 @@ To analyze schools within the district for reading and math scores averages, per
 ## Results
 - Once the data was removed from THS 9th grade and replaced with NaN, and the student count adjusted to remove the number of 9th graders at THS the averages and percentages shifted slightly down. However, the shift was marginal less than 0.3% in all cases. See images below.
 
-    The district summary with THS 9th grade scores:
-
-    The district summary without THS 9th grade scores:
-
+        The district summary with THS 9th grade scores:
+    ![image](https://github.com/trosie3/School_District_Analysis/blob/main/Resources/DistSummarywithTHS9th.png)
+    
+        The district summary without THS 9th grade scores:
+    ![image](https://github.com/trosie3/School_District_Analysis/blob/main/Resources/DistSummarywoTHS9th.png)
+    
 - At the school summary level, no changes were made to other school’s summary from the original analysis with the original data including THS 9th graders scores. However, THS had to be updated to exclude all 9th graders from the analysis as including all the NaNs disrupted the accuracy of the passing reading, math and both percentages as those numbers originally were calculated with the whole student count at THS. To make this adjustment for more accuracy I removed the 9th grade student count (461 students) from the overall THS student count (1635) to conduct the math on only students with score. As you can see below THS counting 461 students with no score significantly changes the summary compared with both data with the 9th graders scores and data without 9th graders score, though again the difference between with 9th grader scores and without 9th graders scores is marginal at less than 0.4% change in each area.
 
-    THS with 9th graders NaN scores in count:
+        THS with 9th graders NaN scores in count:
+    ![image](https://github.com/trosie3/School_District_Analysis/blob/main/Resources/THSwith9thnans.png)
+    
+        THS with 9th grader scores in tact:
+    ![image]
 
-    THS with 9th grader scores in tact:
-
-    THS without 9th graders in count:
-
-    Every School Summary with adjusted THS numbers:
+        Every School Summary with adjusted THS numbers:
+    ![image](https://github.com/trosie3/School_District_Analysis/blob/main/Resources/THS10thru12onlydata.png)
 
 - Even with replacing 9th graders scores with NaN and removing their count from the calculations, thus only fining averages based on 10-12th grader scores Thomas High School remained in the top 5 schools, still in the number 2 slot but their lead over the number 3 school reduced from almost 0.04% to less than 0.01% in overall passing. However, had the 9th grade NaN scores been left in the account as show in the 'THS with 9th graders NaN score in count' above THS would have fallen out of the top 5 but still been higher performing the bottom 5.
 
-    Top performing with THS 9th graders score:
+        Top performing with THS 9th graders score:
+    ![image](https://github.com/trosie3/School_District_Analysis/blob/main/Resources/top5alldataused.png)
+ 
+        Top performing after THS 9th graders scores removed:
+    ![image](https://github.com/trosie3/School_District_Analysis/blob/main/Resources/top5alldataused.png)
 
-    Top performing after THS 9th graders scores removed:
-
-    Bottom performing (saw no change to the original analysis):
+        Bottom performing (saw no change to the original analysis):
+    ![image](https://github.com/trosie3/School_District_Analysis/blob/main/Resources/bottom5alldataused.png)
 
 - Replacing the ninth-grade scores had the following affects:
     -Math and reading scores by grade: no effect on other schools, only THS changed from a 83.6 math score and 83.7 reading score to a nan in both categories for 9th graders, see second image below.
+        
         Before with THS 9th graders score math and reading:
-
+    ![image](https://github.com/trosie3/School_District_Analysis/blob/main/Resources/THSmathscoresbygradewith9th.png)
+    ![Image](https://github.com/trosie3/School_District_Analysis/blob/main/Resources/THSreadingscoresbygradewith9th.png)
+    
         After without THS 9th graders score math and reading full summaries:
-
-    -Scores by school spending: no change from original analysis numbers probably because the change in scores was less than 0.04% without 9th graders vs with 9th graders so once broken down into spending per student there was no significant change, plus regardless of 9th graders not having schools THS would still spend the same amount on each of those students. 
+    ![image](https://github.com/trosie3/School_District_Analysis/blob/main/Resources/scoresbygradesummarymath.png)
+    ![Image](https://github.com/trosie3/School_District_Analysis/blob/main/Resources/scoresbygradesummaryreading.png)
+ 
+   -Scores by school spending: no change from original analysis numbers probably because the change in scores was less than 0.04% without 9th graders vs with 9th graders so once broken down into spending per student there was no significant change, plus regardless of 9th graders not having schools THS would still spend the same amount on each of those students. 
 
         Scores by Spending Ranges:
-        
-    -Scores by school size: no change from original analysis numbers probably because the change in scores was less than 0.04% without 9th graders vs with 9th graders so once broken down into school size per student there was no significant change as THS would still fall into category Medium even without 9th grader count. 
+     ![image](https://github.com/trosie3/School_District_Analysis/blob/main/Resources/spendingrangesperstudentwo9th.png)
+ 
+   -Scores by school size: no change from original analysis numbers probably because the change in scores was less than 0.04% without 9th graders vs with 9th graders so once broken down into school size per student there was no significant change as THS would still fall into category Medium even without 9th grader count. 
 
         Scores by School Size:
-
+    ![image](https://github.com/trosie3/School_District_Analysis/blob/main/Resources/scoresbysizewo9th.png)
+ 
     -Scores by school type: no change from original analysis numbers probably because the change in scores was less than 0.04% without 9th graders vs with 9th graders so once broken down into school type the margin if not large enough to change the overall number for Charter schools which is what THS is.
 
         Scores by School Type:
+    ![image](https://github.com/trosie3/School_District_Analysis/blob/main/Resources/scoresbyschooltypewo9th.png)
 
 ## Summary: 
 By replacing THS 9th graders scores with NaNs there were 4 main changes to the analysis:
